@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="405.0" prefWidth="627.0">
+            <children>
+                <ChoiceBox fx:id="departureBox" layoutX="20.0" layoutY="58.0" prefWidth="150.0" />
+                <ChoiceBox fx:id="arrivalsBox" layoutX="246.0" layoutY="58.0" prefWidth="150.0" />
+
+                <Label layoutX="20.0" layoutY="24.0" prefHeight="17.0" prefWidth="160.0" text="ENTER DEPARTURE STATION" />
+                <Label layoutX="250.0" layoutY="24.0" prefHeight="17.0" prefWidth="141.0" text="ENTER ARRIVAL STATION" />
+                <Label layoutX="454.0" layoutY="24.0" text="ENTER TIME OF TRAVEL" />
+                <TextField layoutX="443.0" layoutY="58.0" />
+            <SplitMenuButton layoutX="35.0" layoutY="234.0" mnemonicParsing="false" text="SplitMenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+            <Button fx:id="enter" layoutX="305.0" layoutY="187.0" mnemonicParsing="false" onAction="#openRoute" text="Enter" />
+            <Label fx:id="label" layoutX="342.0" layoutY="265.0" text="Label" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
